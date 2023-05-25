@@ -1,0 +1,27 @@
+#include <xc.h>
+#include<stdlib.h>
+#include<pic18f4550.h>
+void main(void) {
+    int i,j,l;
+    int k[]={45,6,13,32,2,50,23};
+    for( i=0;i<7;i++){
+        for(j=0;j<6;j++){
+            if(k[j]>k[j+1]){
+            l=k[j];
+            k[j]=k[j+1];
+            k[j+1]=l;
+            }
+            
+        }
+    }
+    TRISD=0;
+    for(i=0;i<6;i++){
+        PORTD=k[i];
+        for(int n=0;n<1000;n++){
+            
+            for(int k=0;k<100;k++){
+                
+            }
+        }
+    }
+    return;
