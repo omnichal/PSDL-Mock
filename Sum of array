@@ -1,0 +1,21 @@
+/* ASSIGNMENT 02*/
+
+#include <xc.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <pic18f4550.h>
+
+void main(void) {
+   
+    int arr[] ={0x11,0x15,0x17};
+    int sum = 0x00;
+   
+    for(int i=0;i<3;i++ )
+    {
+        sum = sum + arr[i];
+    }
+   
+    TRISD = 0;
+    PORTD = sum;
+    return;
+}
