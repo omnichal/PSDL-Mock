@@ -4,7 +4,7 @@
 
 void main()
 {
-    TRISD=0x00;0;
+    TRISD=0x00;
     T0CON=0x48;
     TMR0L=0x00;
    
